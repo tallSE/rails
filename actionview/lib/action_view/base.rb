@@ -280,7 +280,7 @@ module ActionView #:nodoc:
       msg
     end
 
-    def in_context(options, locals)
+    def in_rendering_context(options)
       old_view_renderer  = @view_renderer
       old_lookup_context = @lookup_context
 
