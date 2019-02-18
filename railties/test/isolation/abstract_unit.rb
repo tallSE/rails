@@ -458,6 +458,12 @@ module TestHelpers
       end
     end
   end
+
+  module Reload
+    def reload
+      ActiveSupport::Dependencies.clear
+    end
+  end
 end
 
 class ActiveSupport::TestCase
